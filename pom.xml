@@ -8,8 +8,12 @@
     <artifactId>dubbo-parent</artifactId>
     <version>1.0</version>
     <description>父项目</description>
-    <name>dubbo-parent</name>
     <packaging>pom</packaging>
+    <name>dubbo-parent</name>
+
+    <modules>
+        <module>dubbo-provider</module>
+    </modules>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
