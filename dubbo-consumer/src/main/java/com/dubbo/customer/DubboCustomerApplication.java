@@ -1,4 +1,4 @@
-package com.dubbo.provider;
+package com.dubbo.customer;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -10,15 +10,12 @@ import org.springframework.context.annotation.ImportResource;
  * <p>Company:    http://www.hnxianyi.com  <br/> </p>
  *
  * @Author <a href="liqiaolin333@163.com"/>李巧林</a>  <br/>
- * @Date 2018/7/25 11:18
+ * @Date 2018/7/25 17:56
  */
-
 @SpringBootApplication
-@ImportResource("classpath:dubbo/login-dubbo-provider.xml")
-public class DubboProviderApplication {
+@ImportResource({"classpath:dubbo/login-dubbo-consumer.xml"})
+public class DubboCustomerApplication {
     public static void main(String[] args) {
-
-
-       SpringApplication.run(DubboProviderApplication.class,args);
+        SpringApplication.run(DubboCustomerApplication.class, args);
     }
 }
