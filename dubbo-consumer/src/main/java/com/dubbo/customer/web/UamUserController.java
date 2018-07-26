@@ -26,5 +26,6 @@ public class UamUserController {
 
         userInfoService.getUserInfo();
 
+
     }
 }

@@ -2,6 +2,7 @@ package com.dubbo.customer.service.impl;
 
 import com.dubbo.customer.service.UserInfoService;
 import com.dubbo.user.provider.dto.UserLoginRequestDto;
+import com.dubbo.user.provider.dto.UserLoginResponseDto;
 import com.dubbo.user.provider.service.UserLoginService;
 import org.springframework.stereotype.Service;
 
@@ -27,6 +28,8 @@ public class UserInfoServiceImpl implements UserInfoService {
         UserLoginRequestDto userLoginRequestDto = new UserLoginRequestDto();
         userLoginRequestDto.setPassWord("11111");
         userLoginRequestDto.setUserName("哈哈哈哈哈哈");
-        userLoginService.doLogin(userLoginRequestDto);
+        UserLoginResponseDto userLoginResponseDto = userLoginService.doLogin(userLoginRequestDto);
+        System.out.println("密码 = "+ userLoginResponseDto.getPassWord() + " 名字 = " + userLoginResponseDto.getUserName());
+        System.out.println("反参 = "  + userLoginResponseDto);
     }
 }

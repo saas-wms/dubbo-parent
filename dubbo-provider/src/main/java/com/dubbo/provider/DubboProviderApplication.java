@@ -14,11 +14,9 @@ import org.springframework.context.annotation.ImportResource;
  */
 
 @SpringBootApplication
-@ImportResource("classpath:dubbo/login-dubbo-provider.xml")
+@ImportResource(locations = {"classpath:dubbo-config.xml"})
 public class DubboProviderApplication {
     public static void main(String[] args) {
-
-
        SpringApplication.run(DubboProviderApplication.class,args);
     }
 }

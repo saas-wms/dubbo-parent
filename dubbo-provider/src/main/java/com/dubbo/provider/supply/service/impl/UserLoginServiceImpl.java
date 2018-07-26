@@ -20,6 +20,10 @@ public class UserLoginServiceImpl implements UserLoginService {
         System.out.println("调进来啦！！！！！！！！！");
         UserLoginResponseDto userLoginResponseDto = new UserLoginResponseDto();
         userLoginResponseDto.setUserName(requestDto.getUserName());
+        userLoginResponseDto.setEmail("99999999");
+        userLoginResponseDto.setAvatar("嗯嗯嗯呃");
+        userLoginResponseDto.setRealName("真实姓名");
+        userLoginResponseDto.setPassWord(requestDto.getPassWord());
         return userLoginResponseDto;
     }
 }

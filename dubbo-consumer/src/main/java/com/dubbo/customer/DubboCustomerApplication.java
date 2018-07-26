@@ -13,7 +13,7 @@ import org.springframework.context.annotation.ImportResource;
  * @Date 2018/7/25 17:56
  */
 @SpringBootApplication
-@ImportResource({"classpath:dubbo/login-dubbo-consumer.xml"})
+@ImportResource({"classpath:dubbo-config.xml"})
 public class DubboCustomerApplication {
     public static void main(String[] args) {
         SpringApplication.run(DubboCustomerApplication.class, args);
