@@ -25,7 +25,5 @@ public class UamUserController {
         System.out.println("消费方，，，");
 
         userInfoService.getUserInfo();
-
-
     }
 }
