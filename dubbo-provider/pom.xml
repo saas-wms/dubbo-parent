@@ -8,11 +8,6 @@
         <version>1.0</version>
         <relativePath/>
     </parent>
-   <!-- <parent>  引入springboot父项目。由于本身有父项目所以换成下面这种方式引入
-        <groupId>org.springframework.boot</groupId>
-        <artifactId>spring-boot-starter-parent</artifactId>
-        <version>1.5.9.RELEASE</version>
-    </parent>-->
 
     <modelVersion>4.0.0</modelVersion>
     <version>1.0</version>
@@ -26,31 +21,12 @@
         <maven.compiler.target>1.8</maven.compiler.target>
     </properties>
 
-    <dependencyManagement>
-        <dependencies>
-            <dependency>
-                <!-- 引入springboot父项目 -->
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-dependencies</artifactId>
-                <version>1.5.9.RELEASE</version>
-                <type>pom</type>
-                <scope>import</scope>
-            </dependency>
-        </dependencies>
-    </dependencyManagement>
-
-    <!--引入所需要的jar包-->
     <dependencies>
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-web</artifactId>
-        </dependency>
         <dependency>
             <groupId>com.dubbo</groupId>
             <artifactId>user-provider-api</artifactId>
             <version>1.0</version>
         </dependency>
-        <!--父项目中已经声明过版本，子项目只需要在引入即可-->
         <dependency>
             <groupId>com.alibaba</groupId>
             <artifactId>dubbo</artifactId>
