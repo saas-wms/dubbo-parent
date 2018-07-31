@@ -6,7 +6,6 @@
         <groupId>com.dubbo</groupId>
         <artifactId>dubbo-parent</artifactId>
         <version>1.0</version>
-        <relativePath/>
     </parent>
 
     <modelVersion>4.0.0</modelVersion>
@@ -31,6 +30,14 @@
             <groupId>com.alibaba</groupId>
             <artifactId>dubbo</artifactId>
         </dependency>
-    </dependencies>
+        <dependency>
+           <groupId>org.apache.zookeeper</groupId>
+            <artifactId>zookeeper</artifactId>
+        </dependency>
 
+        <dependency>
+            <groupId>org.apache.curator</groupId>
+            <artifactId>curator-framework</artifactId>
+        </dependency>
+    </dependencies>
 </project>
